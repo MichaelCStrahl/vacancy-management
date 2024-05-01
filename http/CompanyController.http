@@ -1,0 +1,23 @@
+POST http://localhost:8080/company/
+Content-Type: application/json
+
+{
+  "name": "Java Jobs",
+  "username": "java_company",
+  "password": "123456",
+  "email": "company@javajobs.com",
+  "website": "https://javajobs.com",
+  "description": "Empresa responsável por vagas de Java"
+}
+
+###
+
+POST http://localhost:8080/job/
+Content-Type: application/json
+
+{
+  "description": "Vaga para Pessoa Desenvolvedora Java, que deseja trabalhar com Spring Boot 3.0",
+  "benefits": "GymPass, Plano de Saúde, Day off no aniversário.",
+  "level": "JUNIOR",
+  "companyId": "e9880112-953c-4d8e-8819-7ea2095a5242" 
+}
